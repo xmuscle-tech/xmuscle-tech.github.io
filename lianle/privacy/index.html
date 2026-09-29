@@ -17,7 +17,7 @@
     </nav>
   </header>
   <main>
-    <p class="language-note">生效日期：2026 年 7 月 25 日</p>
+    <p class="language-note">更新日期：2026 年 9 月 29 日</p>
 
     <h2>我们如何处理数据</h2>
     <p>练了不要求注册 App 账号，不运营开发者自建的用户数据服务器，也不接入广告、分析或追踪 SDK。本地 SwiftData 是 App 的数据来源；完成的训练、体重、动作库、习惯和偏好可通过 Apple CloudKit 保存到你自己的 iCloud 私有数据库，并在登录同一 Apple 账户的设备间同步。默认只有你能访问私有数据库，开发者无法在 CloudKit Dashboard 查看其中内容。</p>
@@ -29,7 +29,7 @@
     <p>昵称、人体图示、组间休息时长和首页卡片顺序等偏好存入本地数据库并可通过 iCloud 同步；Apple 提供的 UserDefaults 仅用于当前设备的快速缓存。</p>
 
     <h2>导出与分享</h2>
-    <p>只有当你主动使用“导出数据”时，练了才会生成 CSV 文件并交给 iOS 系统文件选择器。只有当你主动分享训练结果时，练了才会生成包含本地昵称署名和训练摘要的文本，并交给 iOS 系统分享面板。保存位置、接收对象和后续分享行为均由你决定，练了不会自动上传任何文件、昵称或训练记录。</p>
+    <p>只有当你主动使用“导出数据”时，练了才会生成 CSV 文件并交给 iOS 系统文件选择器。只有当你主动分享训练结果时，练了才会生成包含本地昵称署名和训练摘要的文本，并交给 iOS 系统分享面板。保存位置、接收对象和后续分享行为均由你决定。除此之外，已完成记录和偏好仍会按上述方式自动同步到你自己的 iCloud 私有数据库。</p>
 
     <h2>保留与删除</h2>
     <p>选择“清除全部数据”会立即删除本机数据，并在联网后删除当前 iCloud 账户私有数据库中的练了数据。若此时离线，云端删除会排队等待恢复连接。卸载 App 会删除本机副本，但不会自动删除已同步到 iCloud 的副本；重新安装并使用同一 iCloud 账户时，已同步记录可恢复。删除前请按需导出副本。</p>
@@ -47,7 +47,37 @@
     <p>隐私问题可发送邮件至 <a href="mailto:ontheway703@gmail.com">ontheway703@gmail.com</a>。</p>
 
     <hr>
-    <p class="language-note">English summary: Lianle requires no app account and has no advertising, analytics, tracking, or developer-operated data server. Completed workout, weight, exercise-library, habit, and preference data can sync through Apple CloudKit in your own iCloud private database. Active workout drafts and timers remain on the current device. CSV export and workout sharing occur only when you explicitly request them. “Erase All Data” removes the local copy immediately and queues deletion of Lianle data from the current iCloud account; uninstalling removes only the local copy, so synced data may return after reinstalling with the same iCloud account. Contact: <a href="mailto:ontheway703@gmail.com">ontheway703@gmail.com</a>.</p>
+    <section lang="en" aria-labelledby="privacy-en-title">
+      <h2 id="privacy-en-title">Privacy Policy (English)</h2>
+      <p class="language-note">Updated: September 29, 2026</p>
+
+      <h3>How we handle data</h3>
+      <p>Lianle does not require an app account, operate a developer-run user-data server, or use advertising, analytics, or tracking SDKs. SwiftData on your device is the app's source of truth. Completed workout, weight, exercise-library, habit, and preference data can be saved to your own iCloud private database through Apple CloudKit and synced across devices signed in to the same Apple Account. By default, only you can access your private database; the developer cannot view its contents in CloudKit Dashboard.</p>
+
+      <h3>iCloud sync</h3>
+      <p>Sync depends on the iCloud account signed in on your device, network access, battery level, and system scheduling. If you are not signed in to iCloud or sync is temporarily unavailable, your records remain on this device and the app remains usable. Active workouts, unsubmitted input, and rest timers stay on the current device; completed records sync afterward. Lianle uses the remote-notification capability only for silent CloudKit change notifications. It does not send visible notifications or request notification permission.</p>
+
+      <h3>Preferences</h3>
+      <p>Preferences such as your nickname, body illustration, rest duration, and Home card order are stored in the local database and can sync through iCloud. Apple UserDefaults is used only as a fast cache on the current device.</p>
+
+      <h3>Export and sharing</h3>
+      <p>Lianle creates a CSV file only when you choose Export data (CSV) and gives it to the iOS file picker. Lianle creates a workout summary with your locally stored nickname only when you choose Share and gives it to the iOS share sheet. You choose where to save the file and who receives anything you share. Completed records and preferences can still sync automatically to your own iCloud private database as described above.</p>
+
+      <h3>Retention and deletion</h3>
+      <p>Choosing Clear all data immediately deletes local data and queues deletion of Lianle data from your current iCloud private database. If you are offline, cloud deletion waits until the connection returns. Uninstalling Lianle deletes the local copy but does not automatically delete the iCloud copy. Synced records may return if you reinstall and use the same iCloud account. Export a copy first if you want to keep your records.</p>
+
+      <h3>Third parties and tracking</h3>
+      <p>Lianle does not sell or share personal data with third parties and does not track you across apps or websites. iCloud sync is provided by Apple CloudKit and is subject to your Apple Account and Apple's privacy terms.</p>
+
+      <h3>Children's privacy</h3>
+      <p>Lianle is not designed for children and does not knowingly collect children's personal information.</p>
+
+      <h3>Policy updates</h3>
+      <p>If our data practices change, we will update this page and its effective date, and update the App Store privacy disclosures where applicable.</p>
+
+      <h3>Contact</h3>
+      <p>For privacy questions, email <a href="mailto:ontheway703@gmail.com">ontheway703@gmail.com</a>.</p>
+    </section>
   </main>
   <footer>© 2026 xmuscle-tech</footer>
 </body>
